@@ -1,0 +1,796 @@
+<!---------Create Your First CSS Grid----------------->
+<style>
+        .d1{background:LightSkyBlue;}
+        .d2{background:LightSalmon;}
+        .d3{background:PaleTurquoise;}
+        .d4{background:LightPink;}
+        .d5{background:PaleGreen;}
+        
+        .container {
+          font-size: 40px;
+          width: 100%;
+          background: LightGray;
+          /* add your code below this line */
+          
+          display: grid;
+          /* add your code above this line */
+        }
+      </style>
+        
+      <div class="container">
+        <div class="d1">1</div>
+        <div class="d2">2</div>
+        <div class="d3">3</div>
+        <div class="d4">4</div>
+        <div class="d5">5</div>
+      </div>
+<!---------Add Columns with grid-template-columns----------------->
+<style>
+        .d1{background:LightSkyBlue;}
+        .d2{background:LightSalmon;}
+        .d3{background:PaleTurquoise;}
+        .d4{background:LightPink;}
+        .d5{background:PaleGreen;}
+        
+        .container {
+          font-size: 40px;
+          width: 100%;
+          background: LightGray;
+          display: grid;
+          /* add your code below this line #px dimensions indic. num columns */
+          grid-template-columns: 100px 100px 100px; 
+          
+          /* add your code above this line */
+        }
+      </style>
+        
+      <div class="container">
+        <div class="d1">1</div>
+        <div class="d2">2</div>
+        <div class="d3">3</div>
+        <div class="d4">4</div>
+        <div class="d5">5</div>
+      </div>
+<!---------Add Rows with grid-template-rows----------------->
+<style>
+        .d1{background:LightSkyBlue;}
+        .d2{background:LightSalmon;}
+        .d3{background:PaleTurquoise;}
+        .d4{background:LightPink;}
+        .d5{background:PaleGreen;}
+        
+        .container {
+          font-size: 40px;
+          width: 100%;
+          background: LightGray;
+          display: grid;
+          grid-template-columns: 100px 100px 100px;
+          /* add your code below this line */
+          grid-template-rows: 50px 50px;
+          
+          /* add your code above this line */
+        }
+      </style>
+        
+      <div class="container">
+        <div class="d1">1</div>
+        <div class="d2">2</div>
+        <div class="d3">3</div>
+        <div class="d4">4</div>
+        <div class="d5">5</div>
+      </div>
+<!---------Use CSS Grid units to Change the Size of Columns and Rows----------------->
+<style>
+        .d1{background:LightSkyBlue;}
+        .d2{background:LightSalmon;}
+        .d3{background:PaleTurquoise;}
+        .d4{background:LightPink;}
+        .d5{background:PaleGreen;}
+        
+        .container {
+          font-size: 40px;
+          width: 100%;
+          background: LightGray;
+          display: grid;
+          /* modify the code below this line */
+          
+          grid-template-columns: 1fr 100px 2fr;
+          
+          /* modify the code above this line */
+          grid-template-rows: 50px 50px;
+        }
+      </style>
+        
+      <div class="container">
+        <div class="d1">1</div>
+        <div class="d2">2</div>
+        <div class="d3">3</div>
+        <div class="d4">4</div>
+        <div class="d5">5</div>
+      </div>
+<!---------Create a Column Gap Using grid-column-gap----------------->
+<style>
+        .d1{background:LightSkyBlue;}
+        .d2{background:LightSalmon;}
+        .d3{background:PaleTurquoise;}
+        .d4{background:LightPink;}
+        .d5{background:PaleGreen;}
+        
+        .container {
+          font-size: 40px;
+          min-height: 300px;
+          width: 100%;
+          background: LightGray;
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-template-rows: 1fr 1fr 1fr;
+          /* add your code below this line */
+          
+          grid-column-gap: 20px;
+          /* add your code above this line */
+        }
+      </style>
+        
+      <div class="container">
+        <div class="d1">1</div>
+        <div class="d2">2</div>
+        <div class="d3">3</div>
+        <div class="d4">4</div>
+        <div class="d5">5</div>
+      </div>
+<!---------Create a Row Gap using grid-row-gap----------------->
+<style>
+        .d1{background:LightSkyBlue;}
+        .d2{background:LightSalmon;}
+        .d3{background:PaleTurquoise;}
+        .d4{background:LightPink;}
+        .d5{background:PaleGreen;}
+        
+        .container {
+          font-size: 40px;
+          min-height: 300px;
+          width: 100%;
+          background: LightGray;
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-template-rows: 1fr 1fr 1fr;
+          /* add your code below this line */
+          grid-row-gap: 5px;
+          
+          /* add your code above this line */
+        }
+      </style>
+        
+      <div class="container">
+        <div class="d1">1</div>
+        <div class="d2">2</div>
+        <div class="d3">3</div>
+        <div class="d4">4</div>
+        <div class="d5">5</div>
+      </div>
+<!---------Add Gaps Faster with grid-gap----------------->
+<style>
+        .d1{background:LightSkyBlue;}
+        .d2{background:LightSalmon;}
+        .d3{background:PaleTurquoise;}
+        .d4{background:LightPink;}
+        .d5{background:PaleGreen;}
+        
+        .container {
+          font-size: 40px;
+          min-height: 300px;
+          width: 100%;
+          background: LightGray;
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-template-rows: 1fr 1fr 1fr;
+          /* add your code below this line */
+          
+          grid-gap: 10px 20px;
+          /* add your code above this line */
+        }
+      </style>
+      <div class="container">
+        <div class="d1">1</div>
+        <div class="d2">2</div>
+        <div class="d3">3</div>
+        <div class="d4">4</div>
+        <div class="d5">5</div>
+      </div>
+<!---------Use grid-column to Control Spacing----------------->
+<style>
+        .item1{background:LightSkyBlue;}
+        .item2{background:LightSalmon;}
+        .item3{background:PaleTurquoise;}
+        .item4{background:LightPink;}
+        
+        .item5 {
+          background: PaleGreen;
+          /* add your code below this line */
+          grid-column: item5;
+          
+          /* add your code above this line */
+        }
+        
+        .container {
+          font-size: 40px;
+          min-height: 300px;
+          width: 100%;
+          background: LightGray;
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-template-rows: 1fr 1fr 1fr;
+          grid-gap: 10px;
+        }
+      </style>
+        
+      <div class="container">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+      </div>
+<!---------Use grid-row to Control Spacing----------------->
+<style>
+        .item1{background:LightSkyBlue;}
+        .item2{background:LightSalmon;}
+        .item3{background:PaleTurquoise;}
+        .item4{background:LightPink;}
+        
+        .item5 {
+          background: PaleGreen;
+          grid-column: 2 / 4;
+          /* add your code below this line */
+          grid-row: 2/4;
+          
+          /* add your code above this line */
+        }
+        
+        .container {
+          font-size: 40px;
+          min-height: 300px;
+          width: 100%;
+          background: LightGray;
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-template-rows: 1fr 1fr 1fr;
+          grid-gap: 10px;
+        }
+      </style>
+        
+      <div class="container">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+      </div>
+<!---------Align an Item Horizontally using justify-self----------------->
+<style>
+        .item1{background: LightSkyBlue;}
+        
+        .item2 {
+          background: LightSalmon;
+          /* add your code below this line */
+          justify-self: center;
+          
+          /* add your code above this line */
+        }
+        
+        .item3{background:PaleTurquoise;}
+        .item4{background:LightPink;}
+        .item5{background:PaleGreen;}
+        
+        .container {
+          font-size: 40px;
+          min-height: 300px;
+          width: 100%;
+          background: LightGray;
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-template-rows: 1fr 1fr 1fr;
+          grid-gap: 10px;
+        }
+      </style>
+        
+      <div class="container">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+      </div>
+<!---------Align an Item Vertically using align-self----------------->
+<style>
+        .item1{background:LightSkyBlue;}
+        .item2{background:LightSalmon;}
+        
+        .item3 {
+          background: PaleTurquoise;
+          /* add your code below this line */
+          align-self: end;
+          
+          /* add your code above this line */
+        }
+        
+        .item4{background:LightPink;}
+        .item5{background:PaleGreen;}
+        
+        .container {
+          font-size: 40px;
+          min-height: 300px;
+          width: 100%;
+          background: LightGray;
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-template-rows: 1fr 1fr 1fr;
+          grid-gap: 10px;
+        }
+      </style>
+        
+      <div class="container">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+      </div>
+<!---------Align All Items Horizontally using justify-items----------------->
+<style>
+        .item1{background:LightSkyBlue;}
+        .item2{background:LightSalmon;}
+        .item3{background:PaleTurquoise;}
+        .item4{background:LightPink;}
+        .item5{background:PaleGreen;}
+        
+        .container {
+          font-size: 40px;
+          min-height: 300px;
+          width: 100%;
+          background: LightGray;
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-template-rows: 1fr 1fr 1fr;
+          grid-gap: 10px;
+          /* add your code below this line */
+          justify-items: center;
+          
+          /* add your code above this line */
+        }
+      </style>
+        
+      <div class="container">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+      </div>
+<!---------Align All Items Vertically using align-items----------------->
+<style>
+        .item1{background:LightSkyBlue;}
+        .item2{background:LightSalmon;}
+        .item3{background:PaleTurquoise;}
+        .item4{background:LightPink;}
+        .item5{background:PaleGreen;}
+        
+        .container {
+          font-size: 40px;
+          min-height: 300px;
+          width: 100%;
+          background: LightGray;
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-template-rows: 1fr 1fr 1fr;
+          grid-gap: 10px;
+          /* add your code below this line */
+          
+          align-items: end;
+          /* add your code above this line */
+        }
+      </style>
+        
+      <div class="container">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+      </div>
+<!---------Divide the Grid Into an Area Template----------------->
+<style>
+        .item1{background:LightSkyBlue;}
+        .item2{background:LightSalmon;}
+        .item3{background:PaleTurquoise;}
+        .item4{background:LightPink;}
+        .item5{background:PaleGreen;}
+        
+        .container {
+          font-size: 40px;
+          min-height: 300px;
+          width: 100%;
+          background: LightGray;
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-template-rows: 1fr 1fr 1fr;
+          grid-gap: 10px;
+          /* change code below this line */
+          
+          grid-template-areas:
+            "header header header"
+            ". content content"
+            "footer footer footer";
+          /* change code above this line */
+        }
+      </style>
+        
+      <div class="container">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+      </div>
+<!---------Place Items in Grid Areas Using the grid-area Property----------------->
+<style>
+        .item1{background:LightSkyBlue;}
+        .item2{background:LightSalmon;}
+        .item3{background:PaleTurquoise;}
+        .item4{background:LightPink;}
+        
+        .item5 {
+          background: PaleGreen;
+          /* add your code below this line */
+          
+          grid-area: footer;
+          /* add your code above this line */
+        }
+        
+        .container {
+          font-size: 40px;
+          min-height: 300px;
+          width: 100%;
+          background: LightGray;
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-template-rows: 1fr 1fr 1fr;
+          grid-gap: 10px;
+          grid-template-areas: 
+            "header header header"
+            "advert content content"
+            "footer footer footer";
+        }
+      </style>
+        
+      <div class="container">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+      </div>
+<!---------Use grid-area Without Creating an Areas Template----------------->
+<style>
+        .item1{background:LightSkyBlue;}
+        .item2{background:LightSalmon;}
+        .item3{background:PaleTurquoise;}
+        .item4{background:LightPink;}
+        
+        .item5 {
+          background: PaleGreen;
+          /* add your code below this line */
+          
+          grid-area: 3/1/4/4;
+          /* add your code above this line */
+        }
+        
+        .container {
+          font-size: 40px;
+          min-height: 300px;
+          width: 100%;
+          background: LightGray;
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-template-rows: 1fr 1fr 1fr;
+          grid-gap: 10px;
+        }
+      </style>
+        
+      <div class="container">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+      </div>
+<!---------Reduce Repetition Using the repeat Function----------------->
+<style>
+        .item1{background:LightSkyBlue;}
+        .item2{background:LightSalmon;}
+        .item3{background:PaleTurquoise;}
+        .item4{background:LightPink;}
+        .item5{background:PaleGreen;}
+        
+        .container {
+          font-size: 40px;
+          min-height: 300px;
+          width: 100%;
+          background: LightGray;
+          display: grid;
+          /* change the code below this line */
+          
+          grid-template-columns: repeat(3, 1fr);
+          /* change the code above this line */
+          grid-template-rows: 1fr 1fr 1fr;
+          grid-gap: 10px;
+        }
+      </style>
+        
+      <div class="container">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+      </div>
+<!---------Limit Item Size Using the minmax Function----------------->
+<style>
+        .item1{background:LightSkyBlue;}
+        .item2{background:LightSalmon;}
+        .item3{background:PaleTurquoise;}
+        .item4{background:LightPink;}
+        .item5{background:PaleGreen;}
+        
+        .container {
+          font-size: 40px;
+          min-height: 300px;
+          width: 100%;
+          background: LightGray;
+          display: grid;
+          /* change the code below this line */
+          
+          
+          grid-template-columns: repeat(3, minmax(90px, 1fr)) ;
+          /* change the code above this line */
+          grid-template-rows: 1fr 1fr 1fr;
+          grid-gap: 10px;
+        }
+      </style>
+        
+      <div class="container">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+      </div>
+<!---------Create Flexible Layouts Using auto-fill----------------->
+<style>
+        .item1{background:LightSkyBlue;}
+        .item2{background:LightSalmon;}
+        .item3{background:PaleTurquoise;}
+        .item4{background:LightPink;}
+        .item5{background:PaleGreen;}
+        
+        .container {
+          font-size: 40px;
+          min-height: 100px;
+          width: 100%;
+          background: LightGray;
+          display: grid;
+          /* change the code below this line */
+          
+          grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+          
+          /* change the code above this line */
+          grid-template-rows: 1fr 1fr 1fr;
+          grid-gap: 10px;
+        }
+        
+        .container2 {
+          font-size: 40px;
+          min-height: 100px;
+          width: 100%;
+          background: Silver;
+          display: grid;
+          grid-template-columns: repeat(3, minmax(60px, 1fr));
+          grid-template-rows: 1fr 1fr 1fr;
+          grid-gap: 10px;
+        }
+      </style>
+      <div class="container">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+      </div>
+      <div class="container2">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+      </div>
+<!---------Create Flexible Layouts Using auto-fit----------------->
+<style>
+        .item1{background:LightSkyBlue;}
+        .item2{background:LightSalmon;}
+        .item3{background:PaleTurquoise;}
+        .item4{background:LightPink;}
+        .item5{background:PaleGreen;}
+        
+        .container {
+          font-size: 40px;
+          min-height: 100px;
+          width: 100%;
+          background: LightGray;
+          display: grid;
+          grid-template-columns: repeat( auto-fill, minmax(60px, 1fr));
+          grid-template-rows: 1fr 1fr 1fr;
+          grid-gap: 10px;
+        }
+        
+        .container2 {
+          font-size: 40px;
+          min-height: 100px;
+          width: 100%;
+          background: Silver;
+          display: grid;
+          /* change the code below this line */
+          
+          grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+          
+          /* change the code above this line */
+          grid-template-rows: 1fr 1fr 1fr;
+          grid-gap: 10px;
+        }
+      </style>
+        
+      <div class="container">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+      </div>
+      <div class="container2">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+      </div>
+<!---------Use Media Queries to Create Responsive Layouts----------------->
+<style>
+        .item1 {
+          background: LightSkyBlue;
+          grid-area: header;
+        }
+        
+        .item2 {
+          background: LightSalmon;
+          grid-area: advert;
+        }
+        
+        .item3 {
+          background: PaleTurquoise;
+          grid-area: content;
+        }
+        
+        .item4 {
+          background: lightpink;
+          grid-area: footer;
+        }
+        
+        .container {
+          font-size: 1.5em;
+          min-height: 300px;
+          width: 100%;
+          background: LightGray;
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-template-rows: 50px auto 1fr auto;
+          grid-gap: 10px;
+          grid-template-areas:
+            "header"
+            "advert"
+            "content"
+            "footer";
+        }
+        
+        @media (min-width: 300px){
+          .container{
+            grid-template-columns: auto 1fr;
+            grid-template-rows: auto 1fr auto;
+            grid-template-areas:
+              "advert header"
+              "advert content"
+              "advert footer";
+          }
+        }
+        
+        @media (min-width: 400px){
+          .container{
+            /* change the code below this line */
+          
+            grid-template-areas:
+              "header header"
+              "advert content"
+              "footer footer";
+          
+          /* change the code above this line */
+          }
+        }
+      </style>
+        
+      <div class="container">
+        <div class="item1">header</div>
+        <div class="item2">advert</div>
+        <div class="item3">content</div>
+        <div class="item4">footer</div>
+      </div>
+<!---------Create Grids within Grids----------------->
+<style>
+        .container {
+          font-size: 1.5em;
+          min-height: 300px;
+          width: 100%;
+          background: LightGray;
+          display: grid;
+          grid-template-columns: auto 1fr;
+          grid-template-rows: auto 1fr auto;
+          grid-gap: 10px;
+          grid-template-areas:
+            "advert header"
+            "advert content"
+            "advert footer";
+        }
+        .item1 {
+          background: LightSkyBlue;
+          grid-area: header;
+        }
+        
+        .item2 {
+          background: LightSalmon;
+          grid-area: advert;
+        }
+        
+        .item3 {
+          background: PaleTurquoise;
+          grid-area: content;
+          /* enter your code below this line */
+          display: grid;
+          grid-template-columns: auto 1fr;
+          
+          /* enter your code above this line */
+        }
+        
+        .item4 {
+          background: lightpink;
+          grid-area: footer;
+        }
+        
+        .itemOne {
+          background: PaleGreen;
+        }
+        
+        .itemTwo {
+          background: BlanchedAlmond;
+        }
+        
+      </style>
+        
+      <div class="container">
+        <div class="item1">header</div>
+        <div class="item2">advert</div>
+        <div class="item3">
+          <div class="itemOne">paragraph1</div>
+          <div class="itemTwo">paragraph2</div>
+        </div>
+        <div class="item4">footer</div>
+      </div>
+<!-------------------------->
+<!-------------------------->
+<!-------------------------->

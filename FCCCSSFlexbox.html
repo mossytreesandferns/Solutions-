@@ -1,0 +1,361 @@
+<!------Use display: flex to Position Two Boxes-------------->
+<style>
+        #box-container {
+          height: 500px;
+          display: flex;
+        }
+        #box-1 {
+    background-color: dodgerblue;
+    width: 50%;
+    height: 50%;
+    
+  }
+
+  #box-2 {
+    background-color: orangered;
+    width: 50%;
+    height: 50%;
+    
+  }
+</style>     
+<!------Add Flex Superpowers to the Tweet Embed---flex seems to mean filling up the horizontal space----------->
+<style>
+        body {
+          font-family: Arial, sans-serif;
+        }
+        header {
+          display: flex;
+        }
+        header .profile-thumbnail {
+          width: 50px;
+          height: 50px;
+          border-radius: 4px;
+        }
+        header .profile-name {
+          display: flex;
+          margin-left: 10px;
+        }
+        header .follow-btn {
+          
+          margin: 0 0 0 auto;
+        }
+        header .follow-btn button {
+          border: 0;
+          border-radius: 3px;
+          padding: 5px;
+          display: flex;
+        }
+        header h3, header h4 {
+          display: flex;
+          margin: 0;
+        }
+        #inner p {
+          margin-bottom: 10px;
+          font-size: 20px;
+        }
+        #inner hr {
+          margin: 20px 0;
+          border-style: solid;
+          opacity: 0.1;
+        }
+        footer {
+        display: flex;  
+        }
+        footer .stats {
+          display: flex;
+          font-size: 15px;
+        }
+        footer .stats strong {
+          font-size: 18px;
+        }
+        footer .stats .likes {
+          margin-left: 10px;
+        }
+        footer .cta {
+          margin-left: auto;
+        }
+        footer .cta button {
+          border: 0;
+          background: transparent;
+        }
+      </style>
+<!------Use the flex-direction Property to Make a Row-------------->
+<style>
+        #box-container {
+          display: flex;
+          height: 500px;
+          flex-direction: row-reverse;
+        }
+        #box-1 {
+          background-color: dodgerblue;
+          width: 50%;
+          height: 50%;
+        }
+      
+        #box-2 {
+          background-color: orangered;
+          width: 50%;
+          height: 50%;
+        }
+      </style>
+<!------Apply the flex-direction Property to Create Rows in the Tweet Embed-------------->
+<style>
+        body {
+          font-family: Arial, sans-serif;
+        }
+        header {
+          display: flex;
+          flex-direction: row;
+        }
+        header .profile-thumbnail {
+          width: 50px;
+          height: 50px;
+          border-radius: 4px;
+        }
+        header .profile-name {
+          display: flex;
+          margin-left: 10px;
+        }
+        header .follow-btn {
+          display: flex;
+          margin: 0 0 0 auto;
+        }
+        header .follow-btn button {
+          border: 0;
+          border-radius: 3px;
+          padding: 5px;
+        }
+        header h3, header h4 {
+          display: flex;
+          margin: 0;
+        }
+        #inner p {
+          margin-bottom: 10px;
+          font-size: 20px;
+        }
+        #inner hr {
+          margin: 20px 0;
+          border-style: solid;
+          opacity: 0.1;
+        }
+        footer {
+          display: flex;
+          flex-direction: row;
+          
+        }
+        footer .stats {
+          display: flex;
+          font-size: 15px;
+        }
+        footer .stats strong {
+          font-size: 18px;
+        }
+        footer .stats .likes {
+          margin-left: 10px;
+        }
+        footer .cta {
+          margin-left: auto;
+        }
+        footer .cta button {
+          border: 0;
+          background: transparent;
+        }
+      </style>
+<!------Use the flex-direction Property to Make a Column-------------->
+<style>
+        #box-container {
+          display: flex;
+          height: 500px;
+          flex-direction: column;
+        }
+        #box-1 {
+          background-color: dodgerblue;
+          width: 50%;
+          height: 50%;
+        }
+      
+        #box-2 {
+          background-color: orangered;
+          width: 50%;
+          height: 50%;
+        }
+      </style>
+<!------Apply the flex-direction Property to Create a Column in the Tweet Embed---good to use with display: flex;----------->
+header .profile-name {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+  }
+<!------Align Elements Using the justify-content Property-------------->
+<style>
+        #box-container {
+          background: gray;
+          display: flex;
+          height: 500px;
+          justify-content: center;
+        }
+        #box-1 {
+          background-color: dodgerblue;
+          width: 25%;
+          height: 100%;
+        }
+      
+        #box-2 {
+          background-color: orangered;
+          width: 25%;
+          height: 100%;
+        }
+      </style>
+<!------Use the justify-content Property in the Tweet Embed----justify-content along main axis---------->
+}
+header .profile-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10px;
+}
+<!------Align Elements Using the align-items Property---align-items along cross axis----------->
+#box-container {
+    background: gray;
+    display: flex;
+    height: 500px;
+    align-items: center;
+  }
+<!------Use the align-items Property in the Tweet Embed-------------->
+}
+header .follow-btn {
+  display: flex;
+  align-items: center;
+  margin: 0 0 0 auto;
+}
+<!------Use the flex-wrap Property to Wrap a Row or Column-------------->
+#box-container {
+    background: gray;
+    display: flex;
+    height: 100%;
+    flex-wrap: wrap; 
+  }
+<!------Use the flex-shrink Property to Shrink Items-------------->
+<style>
+        #box-container {
+          display: flex;
+          height: 500px;
+        }
+        #box-1 {
+          background-color: dodgerblue;
+          width: 100%;
+          height: 200px;
+          flex-shrink: 1;
+        }
+      
+        #box-2 {
+          background-color: orangered;
+          width: 100%;
+          height: 200px;
+          flex-shrink: 2;
+        }
+      </style>
+<!------Use the flex-grow Property to Expand Items-------------->
+<style>
+        #box-container {
+          display: flex;
+          height: 500px;
+        }
+        
+        #box-1 {
+          background-color: dodgerblue;
+          height: 200px;
+          flex-grow: 1;
+        }
+        
+        #box-2 {
+          background-color: orangered;
+          height: 200px;
+          flex-grow: 2;
+        }
+      </style>
+<!------Use the flex-basis Property to Set the Initial Size of an Item-------------->
+<style>
+        #box-container {
+          display: flex;
+          height: 500px;
+        }
+        
+        #box-1 {
+          background-color: dodgerblue;
+          height: 200px;
+          flex-basis: 10em;
+        }
+        
+        #box-2 {
+          background-color: orangered;
+          height: 200px;
+          flex-basis: 20em;
+        }
+      </style>
+<!------Use the flex Shorthand Property-------------->
+<style>
+        #box-container {
+          display: flex;
+          height: 500px;
+        }
+        #box-1 {
+          background-color: dodgerblue;
+          flex: 2 2 150px;
+          height: 200px;
+        }
+      
+        #box-2 {
+          background-color: orangered;
+          flex: 1 1 150px;
+          height: 200px;
+        }
+      </style>
+<!------Use the order Property to Rearrange Items-------------->
+<style>
+        #box-container {
+          display: flex;
+          height: 500px;
+        }
+        #box-1 {
+          background-color: dodgerblue;
+          order: 2;
+          height: 200px;
+          width: 200px;
+        }
+      
+        #box-2 {
+          background-color: orangered;
+          order: 1;
+          height: 200px;
+          width: 200px;
+        }
+      </style>
+<!------Use the align-self Property-------------->
+<style>
+        #box-container {
+          display: flex;
+          height: 500px;
+        }
+        #box-1 {
+          background-color: dodgerblue;
+          align-self: center;
+          height: 200px;
+          width: 200px;
+        }
+      
+        #box-2 {
+          background-color: orangered;
+          align-self: flex-end;
+          height: 200px;
+          width: 200px;
+        }
+      </style>
+<!-------------------->
+<!-------------------->
+<!-------------------->
+<!-------------------->
+<!-------------------->
+<!-------------------->
+<!-------------------->
+<!-------------------->
